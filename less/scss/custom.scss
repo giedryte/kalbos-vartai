@@ -1,0 +1,299 @@
+/*Variables*/
+
+$color-blue: #23313E;
+$color-yellow: #ceb475;
+
+
+/*Basics*/
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+*::selection {
+	color: $color-yellow;
+	background-color: $color-blue;
+}
+
+a{
+	text-decoration: none;
+}
+
+body {
+	margin: 0;
+}
+
+body, p {
+	font-family: "Raleway", open-sans;
+}
+
+
+h1, h2 {
+	font-family: "Cantata One";
+}
+
+.banner-img {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-nav {
+	position: fixed;
+	z-index: 2;
+	width: 95%;
+	top: 2.5em;
+	color: #fff;
+
+	.main-nav {
+
+		display: flex;
+		justify-content: flex-end;
+
+		ul {
+			list-style-type: none;
+
+			li {
+				display: inline;
+				padding: 1.5em;
+				color: #fff;
+				letter-spacing: 0.15em;
+				font-weight: 300;
+				font-size: 0.8em;
+
+				a {
+					color: #fff;
+				}
+
+			}
+
+		}
+	}
+}
+
+.logo img {
+	position: fixed;
+    top: 2.5em;
+    left: 5%;
+	width: 8%;
+	z-index: 2;
+}
+
+.title h1 {
+	position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    width: 80%;
+    text-align: center;
+    color: #fff;
+	letter-spacing: 0.15em;
+	
+	h1 {
+		font-weight: normal;
+	}
+}
+
+.citation {
+	position: absolute;
+    top: 70%;
+    color: white;
+    z-index: 3;
+    right: 7%;
+    width: 25%;
+	font-size: 1em;
+	font-size: 0.8em;
+    letter-spacing: 0.05em;
+    background-color: $color-yellow;
+	padding: 3em 3em 7em;
+	font-weight: 300;
+	line-height: 1.5em;
+	transition: ease .3s;
+
+	.text:before, .text:after {
+		content: '"';
+		font-size:1.5em;
+		line-height: 1.5em;
+		font-style: italic;
+	}
+	
+	.citation-author {
+		font-style: italic;
+		padding-top: 1em;
+		font-family: "Cantata One";
+	}
+}
+
+.citation:hover {
+	box-shadow: 0 4px 9px 1px rgba(0, 0, 0, 0.5);
+}
+
+.paslaugos-inner {
+	padding: 8em 0;
+}
+
+.paslaugos-body, .apie-body, .kontaktai-body {
+
+		width: 90%;
+		margin: auto;
+
+	p {
+		padding: 3em 0;
+		line-height: 1.7em;
+		color: $color-blue;
+	}
+
+}
+
+.title h2{
+	font-size: 3em;
+	color: $color-blue;
+    padding: 0 0 0.5em;
+	border-bottom: 2px solid $color-yellow;
+	display: inline-block;
+	width: auto;
+}
+
+.title-paslaugos-holder {
+	width: 90%;
+	text-align: right;
+	margin: auto;
+}
+
+.title-paslaugos-holder h3 {
+    width: auto;
+    color: #24313e;
+    font-size: 2em;
+    border-bottom: 2px solid #ceb475;
+    padding: 0 0 0.5em;
+	font-family: "cantata one";
+	display: inline-block;
+}
+
+.paslaugos-holder {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3em 0 0;
+}
+
+.service {
+	display: inline-block;
+    width: 19%;
+    padding: 0 2em;
+    text-align: center;
+    background-color: $color-blue;
+    font-size: 1em;
+    height: 9em;
+    color: #fff;
+    letter-spacing: 0.1em;
+    margin: 2em;
+	transition: ease .3s;
+	cursor: default;
+	
+	p {
+		position: relative;
+		top: 40%;
+		transform: translateY(-50%);
+	}
+}
+
+.service:hover {
+	box-shadow: 0 4px 9px 1px rgba(0, 0, 0, 0.5);
+	background-color: $color-yellow;
+	transition: ease .3s;
+}
+
+.apie {
+	background-image: url("../images/apie-bg2.jpg");
+	width: 100%;
+	height: 600px;
+	position: relative;
+	z-index: 1;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	
+	.title h2 {
+		color: #fff;
+	}
+
+	.apie-content {
+		background-color: $color-yellow;
+		padding: 0em 3em 2em;
+
+		p {
+			color: #fff;
+		}
+	}
+
+	.apie-content:hover {
+		box-shadow: 0 4px 9px 1px rgba(0, 0, 0, 0.5);
+	}
+}
+
+.icons-holder {
+	display: flex;
+}
+
+.stiprybe {
+	display: inline-block;
+    width: 25%;
+	text-align: center;
+	padding:0 2em;
+
+	p {
+		padding: 0;
+	}
+}
+
+.icons {
+    font-size: 4em;
+    color: #fff;
+    padding: 15px;
+    font-family: icomoon;
+    cursor: default;
+}
+
+.kontaktai-inner {
+	padding: 8em 0;
+}
+
+.kontaktai-info, .kontaktai-forma {
+	width: 49%;
+	display: inline-block;
+}
+
+.forma {
+	display: flex;
+	flex-direction: column;
+}
+
+input[type="text"] {
+	display: inline-block;
+    font-family: Raleway;
+    font-size: 1.5em;
+    color: $color-blue;
+    padding: 0 0 0.5em;
+    border: 0px;
+    border-bottom: 2px $color-yellow solid;
+}
+
+input::placeholder {
+	color: $color-blue;
+}
+
+
+
+

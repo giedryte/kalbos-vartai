@@ -29,12 +29,21 @@ $(window).scroll(function () {
 
 
     $('.title h1').css({
+<<<<<<< HEAD
         'transform' : 'translate(-50%, '+ wScroll /1.5 + '%)'
     });
 
     $('.button').css({
         'transform' : 'translate(-50%, '+ wScroll /2 + '%)'
     });
+=======
+        'transform' : 'translate(-50%, '+ wScroll / 5 + '%)'
+    });
+
+    // $('.button').css({
+    //     'transform' : 'translate(-50%, '+ wScroll / 2 + '%)'
+    // });
+>>>>>>> Added new books to teh list
 
     if (wScroll > $('.service-outer').offset().top - ($(window).height() / 1.2)) {
         $('.service-body .title').addClass("animated fadeInUp");
@@ -81,6 +90,21 @@ $(window).scroll(function () {
         });
     }
 
+<<<<<<< HEAD
+=======
+    
+    if (wScroll > $('.work-outer').offset().top - ($(window).height() / 1.2)) {
+        $('.work-body .title').addClass("animated fadeInUp");
+    }
+
+    if (wScroll > $('.work-body .item-list').offset().top - ($(window).height() / 1.5)) {
+        $('.work-body .item').each(function (i) {
+            setTimeout(function () {
+                $('.work-body .item').eq(i).addClass('animated fadeInUp'); }, 200 * (i + 1));
+        });
+    }
+
+>>>>>>> Added new books to teh list
     if (wScroll > $('.contacts-outer').offset().top - ($(window).height() / 1.5)) {
         $('.contacts-body .title').addClass("animated fadeInUp");
         $('.kontaktai-forma').addClass("animated fadeInUp");
